@@ -1,0 +1,73 @@
+@import url();
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(https://images.pexels.com/photos/2355519/pexels-photo-2355519.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: luminosity;
+	background-position: center;
+	background-color: cyan;
+	font-family: 'Roboto', sans-serif;
+}
+
+.dojo {
+	width: 100%;
+	height: 100vh;
+	background-size: 100% auto;
+	padding-top: 10px;
+}
+
+.quiz-body {
+	background-color: rgba(255, 255, 255, 1);
+	margin: 150px 33%;
+	padding: 10px 20px 50px 20px;
+	-moz-box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	color: #611bbd;
+	font-weight: 900;
+	text-align: center;
+	margin: 0;
+	font-size: 48px;
+	/* font-family: ; */
+}
+
+button {
+	color: #fff;
+	background-color: #611bbd;
+	border-color: #130269;
+	border-radius: 4px;
+	margin: 0.2em 0;
+	display: block;
+	width: 100%;
+	font-size: 24px;
+}
+
+#question {
+	font-size: 24px;
+}
+
+#result {
+	color: #fff;
+	margin: 0.2em 0;
+	width: 100%;
+	text-align: center;
+}
+
+.correct {
+	background-color: #0c0;
+}
+
+.wrong {
+	background-color: #c00;
+	color: #fff;
+}
