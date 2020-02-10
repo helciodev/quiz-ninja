@@ -14,11 +14,20 @@ const view = {
 			target.setAttribute(key, attributes[key]);
 		}
 		target.innerHTML = content;
+	},
+	start: document.getElementById('start'),
+
+	show(element) {
+		element.style.display = 'block';
+	},
+	hide(element) {
+		element.style.display = 'none';
 	}
 };
 
 const game = {
 	startQuiz(quiz) {
+		view.hide(view.start);
 		this.questions = quiz;
 		this.score = 0; // score iniatilizer
 
@@ -62,9 +71,13 @@ const game = {
 			`game over
 			you scored ${this.score} point${this.score !== 1 ? 's' : ''}`
 		);
+
+		view.show(view.start);
 	}
 };
 
 //game initializer
 
-game.startQuiz(quiz);
+view.start.addEventListener('click', () => {
+	game.startQuiz(quiz), false;
+});
