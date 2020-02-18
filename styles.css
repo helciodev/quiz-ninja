@@ -50,6 +50,7 @@ button {
 	display: block;
 	width: 100%;
 	font-size: 24px;
+	cursor: pointer;
 }
 
 #question {
@@ -70,4 +71,8 @@ button {
 .wrong {
 	background-color: #c00;
 	color: #fff;
+}
+
+input {
+	padding: 3px 4px;
 }
