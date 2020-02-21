@@ -45,7 +45,7 @@ const view = {
 	tearDown() {
 		this.hide(this.response);
 		this.hide(this.question);
-		this.hide(this.info);
+		this.show(this.info);
 		this.show(this.start);
 	}
 };
